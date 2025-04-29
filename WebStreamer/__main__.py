@@ -1,9 +1,8 @@
 import time
 import logging
 from pyrogram import idle
-from WebStreamer import web, start
-from WebStreamer.vars import Var
 from WebStreamer.bot import StreamBot
+from WebStreamer.vars import Var
 
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
@@ -14,7 +13,7 @@ async def main():
 
     try:
         logger.info("Starting bot...")
-        await start()
+        await StreamBot.start()
         logger.info("Bot started. Idling...")
         await idle()
         logger.info("Bot stopped.")
