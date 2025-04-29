@@ -1,3 +1,5 @@
+import time
+time.sleep(10)
 # This file is a part of TG-FileStreamBot
 # Coding: @EverythingSuckz & @AbirHasan2005
 
